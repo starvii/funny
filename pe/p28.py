@@ -1,25 +1,13 @@
 # -*- coding: utf8 -*-
 
-interval_dict = {2 : 1}
 last_num_dict = {1 : 1}
 
 def interval(n_spiral):
-    if interval_dict.has_key(n_spiral):
-        return interval_dict[n_spiral]
-    if n_spiral < 2:
-        return 0
-    if 2 == n_spiral:
-        ret = 1
-    else:
-        ret = interval(n_spiral - 1) + 2
-    interval_dict[n_spiral] = ret
-    return ret
+    return (n_spiral - 2) * 2 + 1
 
 def last_num(n_spiral):
     if last_num_dict.has_key(n_spiral):
         return last_num_dict[n_spiral]
-    if n_spiral < 1:
-        return 0
     if 1 == n_spiral:
         ret = 1
     else:
