@@ -1,0 +1,3 @@
+robocopy c:\Users c:\home\users /E /XJ /COPYALL
+rmdir c:\Users /Q /S
+mklink /J c:\Users c:\home\users
