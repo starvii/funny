@@ -1,0 +1,3 @@
+WIN2012R2 开启无线网络方法
+安装无线组件
+启动WLAN AutoConfig服务
